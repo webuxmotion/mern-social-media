@@ -4,7 +4,10 @@
   "description": "Complete React MERN Full Stack Social Media App",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "cd server && nodemon index.js",
+    "client": "cd client && npm start",
+    "start": "concurrently \"npm run server\" \"npm run client\""
   },
   "repository": {
     "type": "git",
@@ -16,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/webuxmotion/mern-social-media/issues"
   },
-  "homepage": "https://github.com/webuxmotion/mern-social-media#readme"
+  "homepage": "https://github.com/webuxmotion/mern-social-media#readme",
+  "dependencies": {
+    "concurrently": "^7.5.0"
+  }
 }

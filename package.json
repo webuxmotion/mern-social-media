@@ -10,7 +10,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "server": "nodemon server/index.js",
     "client": "cd client && npm run build",
-    "start": "concurrently \"npm run server\" \"npm run client\""
+    "start": "concurrently \"npm run server\""
   },
   "repository": {
     "type": "git",
